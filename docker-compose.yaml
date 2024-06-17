@@ -1,0 +1,8 @@
+services:
+  toy_docker_db_oracle_xe:
+    image: toy_docker_db_oracle_xe
+    container_name: toy_docker_db_oracle_xe
+    restart: always
+    ports:
+      - 1521:1521
+
