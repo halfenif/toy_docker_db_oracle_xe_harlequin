@@ -3,10 +3,10 @@ import pyodbc
 try:
     conn = pyodbc.connect('DRIVER=oracle;DBQ=localhost:1521/XE;UID=userdb;PWD=userdb')
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM your_table")
+    cursor.execute("SELECT * FROM tb_test")
     rows = cursor.fetchall()
-        for row in rows:
-            print(row)
+    for row in rows:
+        print(row)
     cursor.close()
     conn.close()
 
