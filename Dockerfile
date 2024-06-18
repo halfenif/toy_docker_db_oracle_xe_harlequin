@@ -8,7 +8,7 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN echo Asia/Seoul > /etc/timezone
 
 # Install Util
-RUN yum install wget tar vi nano -y
+RUN yum install wget tar vi nano dnf -y
 
 # Install Oracle Instant Client
 RUN wget https://yum.oracle.com/repo/OracleLinux/OL7/oracle/instantclient/x86_64/getPackage/oracle-instantclient19.23-basic-19.23.0.0.0-1.x86_64.rpm -O /tmp/oracle-instantclient19.23-basic-19.23.0.0.0-1.x86_64.rpm

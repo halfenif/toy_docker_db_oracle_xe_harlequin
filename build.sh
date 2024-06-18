@@ -21,5 +21,7 @@ echo /app/harlequin.sh
 echo 3. Good luck!
 echo ------------------------------------------
 
+# docker logs --tail 100 toy_docker_db_oracle_xe
+
 # docker inspect  -f '{{.State.Status}}' toy_docker_db_oracle_xe
 # docker inspect  -f '{{.State.Running}}' toy_docker_db_oracle_xe
