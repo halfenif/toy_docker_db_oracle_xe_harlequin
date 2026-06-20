@@ -28,7 +28,7 @@ cd toy_docker_db_oracle_xe
 - Port: docker-compose.yaml
 - DBMS, User, Password: init.sql
 - unixodbc: ./unixODBC/odbcinst.ini
-
+- ALTER profile DEFAULT  LIMIT password_life_time unlimited; 적용해야 한다
 
 ## Feature
 - Python 3.9
